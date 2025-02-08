@@ -1,11 +1,11 @@
-# WintrCat's Game Report
+# Azu's Game Report
 
-Generate classifications for your Chess moves, for free. Available @ [chess.wintrcat.uk](https://chess.wintrcat.uk/)
+Generate classifications for your Chess moves, for free.
 <br><br>
 Enter a game by its PGN or pick a game from your Chess.com / Lichess.org account and have it analysed so that you can see where your mistakes and brilliancies are.
 
 **ANNOUNCEMENT**<br>
-Freechess is currently closed to further contributions - we are working on rebuilding the website from the ground up :)
+Azuchess is currently closed to further contributions - we are working on rebuilding the website from the ground up :)
 
 ## Running locally
 ### Prerequisites
@@ -39,25 +39,11 @@ Freechess is currently closed to further contributions - we are working on rebui
 - If you want to use a CAPTCHA:
     - Add your client secret as `RECAPTCHA_SECRET=<secret>` to the .env file
     - Open `src/public/pages/report/index.html`, find `data-sitekey` and replace the value with your reCAPTCHA public site key
-- Run `sudo docker build . -t freechess` to build the image
+- Run `sudo docker build . -t azuchess` to build the image
 
 ### Start a Docker container with the freechess image
-- Run `sudo docker run -d -P freechess`
+- Run `sudo docker run -d -P azuchess`
 - If you wish to choose the port instead of Docker choosing one for you, replace `-P` with `-p <port>:80`
 
 ## Attributions
-@shirsakm - Classification icons
-
-## Donate
-I pay to keep my app running and free-to-use for everyone. Any donations are greatly appreciated ❤️
-<br><br>
-<a href="https://ko-fi.com/N4N7SORCC">
-    <img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi1.png?v=3"/>
-</a>
-
-## Join the community
-If you've found a bug in the website, have some cool suggestions or just want to have a chat, you can join my Discord!
-<br>
-<a href="https://discord.com/invite/XxtsAzPyCb">
-    <img height="36" src="https://chess.wintrcat.uk/static/media/discord.png">
-</a>
+@Exosei - Classification icons
