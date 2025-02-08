@@ -8,7 +8,11 @@
   ],
   "routes": [
     {
-      "src": "/.*",
+      "src": "/static/(.*)",
+      "dest": "dist/public/static/$1" // Changed to dist/
+    },
+    {
+      "src": "/(.*)", 
       "dest": "src/server.ts"
     }
   ]
